@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>login page</title>
+    <meta name="author" content="vijay paradhi"
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/styling.css">
+  </head>
+  <body>
+      <div class="container">
+        <div class="one">
+        <h1>Welcome</h1>
+        <p>login here to visit my websites</p>
+        <form name="login">
+          <div class="login">
+          <input id="name" type="text" placeholder="Username" name="usname"><br>
+          <input id="pswd" type="password" placeholder="Password" name="paswd"><br>
+          <input type="button" onclick="check(this.form)" value="login">
+        </div>
+        </div>
+        </form>
+        <script>
+          function check(form){
+          if(form.usname.value=="vijay" && form.paswd.value=="vijay107")
+            {
+              window.open("https://www.youtube.com/watch?v=1tFgEq6IHYw&list=RD1tFgEq6IHYw&start_radio=1");
+            }
+          else
+            {
+              window.alert("inavalid username or password");
+            }
+          }
+        </script>
+      </div>
+  </body>
+</html>
